@@ -4,7 +4,7 @@ import router from './routes/users.routes'
 import cors from 'cors'
 
 const app = express()
-// middleware
+// middleware for app
 app.use(morgan('dev'))
 app.use(express.json())
 app.use('/api', router)
