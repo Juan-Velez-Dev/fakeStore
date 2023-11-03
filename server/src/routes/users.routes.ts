@@ -1,10 +1,8 @@
 import createUserHandler from '../handlers/users/createUserHandler'
-import getUsersHandler from '../handlers/users/getUsersHandler'
 import express from 'express'
 
-const router = express.Router()
+const userRouter = express.Router()
 
-router.post('/create', createUserHandler)
-router.get('/test', getUsersHandler)
+userRouter.post('/create', createUserHandler)
 
-export default router
+export default userRouter
