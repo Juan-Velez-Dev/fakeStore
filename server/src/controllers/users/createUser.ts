@@ -1,19 +1,11 @@
-interface User {
-  name: string
-  userName: string
-  email: string
-  password: string
-}
+import userValidation from '../../utils/userValidation'
+import userConvert from '../../helpers/userConvert'
+import { type User } from '../../ts'
 
 const createUser = (data: User): User => {
-  const user = {
-    name: data.name,
-    userName: data.userName,
-    email: data.email,
-    password: data.password
-  }
-
-  return user
+  const response: boolean = userValidation(data)
+  if (response) return userConvert(data)
+  else throw new Error('Invalid data!')
 }
 
 export default createUser
