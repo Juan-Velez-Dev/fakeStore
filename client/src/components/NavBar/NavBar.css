@@ -1,0 +1,11 @@
+.navBar-Container{
+    @apply flex flex-row justify-between items-center bg-apple-900 text-apple-50 font-poppins h-[70px]
+}
+
+.navBar-links-container{
+    @apply flex flex-row justify-between items-center w-[50%] h-full whitespace-nowrap relative right-[100px] gap-[30px]
+}
+
+.navBar-title{
+    @apply text-2xl font-semibold relative left-[100px]
+}

@@ -1,10 +1,11 @@
+import './NavBar.css'
 
 function NavBar() {
   return (
-    <div>
-        <h1>FakeStore</h1>
+    <div className='navBar-Container'>
+        <h1 className='navBar-title'>FakeStore</h1>
         <div>
-            <ul>
+            <ul className='navBar-links-container'>
                 <li>Home</li>
                 <li>About</li>
                 <li>Shopping Cart</li>
