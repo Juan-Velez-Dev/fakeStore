@@ -11,3 +11,4 @@
 
 /products/ => get all products
 /products/categories => get all products categories
+/products/:name => get by name
