@@ -1,11 +1,24 @@
 .navBar-Container{
-    @apply flex flex-row justify-between items-center bg-apple-900 text-apple-50 font-poppins h-[70px]
+    @apply flex flex-row justify-between items-center bg-cello-900 text-cello-50 font-poppins h-[70px] shadow-md
 }
 
 .navBar-links-container{
-    @apply flex flex-row justify-between items-center w-[50%] h-full whitespace-nowrap relative right-[100px] gap-[30px]
+    @apply flex flex-row justify-between items-center w-[50%] h-full whitespace-nowrap relative right-[100px] gap-[30px] relative left-[350px]
 }
 
 .navBar-title{
     @apply text-2xl font-semibold relative left-[100px]
+}
+
+.search-icon{
+    @apply w-[30px] h-[30px] 
+}
+
+.search-btn{
+    @apply w-[32px] h-[31px] bg-cello-100 cursor-pointer rounded-full absolute right-[189px]
+    hover:bg-cello-200
+}
+
+.search-input{
+    @apply w-[200px] h-[31px] rounded-full bg-cello-100 text-cello-900 text-sm font-poppins pl-[10px] hover:bg-cello-200 relative right-[20px] pl-[33px] focus:outline-none focus:ring-2 focus:ring-cello-300
 }

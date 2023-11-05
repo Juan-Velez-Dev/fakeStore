@@ -8,8 +8,10 @@ const app = express()
 // middleware
 app.use(morgan('dev'))
 app.use(express.json())
+app.use(cors({
+    origin: 'http://localhost:5173'
+}))
 app.use('/user', userRouter)
 app.use('/products', productsRouter)
-app.use(cors())
 
 export default app
