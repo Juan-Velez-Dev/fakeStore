@@ -5,3 +5,9 @@
 body{
     background-color: #e4ecfa;
 }
+
+@media (min-width: 640px) {
+    body{
+        overflow-x: hidden;
+    }
+}
