@@ -2,7 +2,7 @@ import { useSelector } from "react-redux/es/hooks/useSelector";
 import Card from "./Card";
 
 type Product = {
-    name: string
+    title: string
     price: number
     image: string
     rating: {
@@ -23,9 +23,10 @@ function Cards() {
   return (
     <div className="flex flex-row flex-wrap gap-[150px] mt-[40px] justify-center">
     {
-        products.map((product: Product)=>{
+        products?.map((product: Product, index: number)=>{
             return <Card
-            productName={product.name}
+            key={index}
+            productName={product.title}
             productPrice={product.price}
             productImage={product.image}
             productRating={product.rating.rate}
